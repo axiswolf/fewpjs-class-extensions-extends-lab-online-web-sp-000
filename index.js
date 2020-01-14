@@ -7,6 +7,9 @@ class Polygon {
   get countSides() {
     return this.sides.length
   }
+  get perimeter() {
+    return sides.reduce((amount, total) => amount + total)
+  }
 }
 
 class Triangle {
