@@ -17,13 +17,6 @@ class Triangle extends Polygon {
   get isValid() {
     //checks if there are 3 sides
     // checks if it is a triangle
-  }
-}
-
-class Square extends Polygon {
-  get isValid() {
-    // checks if there is 4 sides
-    // checks if each side is equal
     function checkSides() {
      const perimeter = this.perimeter
      return this.sides.some((side) => (perimeter - side) <= side)
@@ -36,5 +29,13 @@ class Square extends Polygon {
    } else {
      return true
    }
+  }
+}
+
+class Square extends Polygon {
+  get isValid() {
+    // checks if there is 4 sides
+    // checks if each side is equal
+    
   }
 }
