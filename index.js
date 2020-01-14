@@ -36,6 +36,6 @@ class Square extends Polygon {
   get isValid() {
     // checks if there is 4 sides
     // checks if each side is equal
-    
+
   }
 }
