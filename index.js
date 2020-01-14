@@ -1,7 +1,7 @@
 // Your code here
 
 class Polygon {
-  get countSides(sides) {
+  get countSides() {
 
   }
 }
