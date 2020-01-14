@@ -6,16 +6,17 @@ class Polygon {
   }
   get countSides() {
     return this.sides.length
+    // if sides = 3, return triangle
   }
   get perimeter() {
     return this.sides.reduce((sum, currentSide) => sum + currentSide, 0)
   }
 }
 
-class Triangle {
-
+class Triangle extends Polygon {
+  
 }
 
-class Square {
+class Square extends Polygon {
 
 }
