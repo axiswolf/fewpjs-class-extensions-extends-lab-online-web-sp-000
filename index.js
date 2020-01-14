@@ -15,12 +15,14 @@ class Polygon {
 
 class Triangle extends Polygon {
   get isValid() {
-
+    //checks if there are 3 sides
+    // checks if it is a triangle
   }
 }
 
 class Square extends Polygon {
   get isValid() {
-
+    // checks if there is 4 sides
+    // checks if each side is equal
   }
 }
