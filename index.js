@@ -8,7 +8,9 @@ class Polygon {
     return this.sides.length
   }
   get perimeter() {
-    return sides.reduce()
+    this.sides.reduce(function (accumulator, currentValue) {
+      return accumulator + currentValue
+    }, 0)
   }
 }
 
