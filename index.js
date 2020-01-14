@@ -15,20 +15,18 @@ class Polygon {
 
 class Triangle extends Polygon {
   get isValid() {
-    //checks if there are 3 sides
-    // checks if it is a triangle
     function checkSides() {
-     const perimeter = this.perimeter
-     return this.sides.some((side) => (perimeter - side) <= side)
-   }
+      const perimeter = this.perimeter
+      return this.sides.some((side) => (perimeter - side) <= side)
+    }
 
-   if (this.getCount !== 3) {
-     return false
-   } else if (checkSides.call(this)) {
-     return false
-   } else {
-     return true
-   }
+    if (this.getCount !== 3) {
+      return false
+    } else if (checkSides.call(this)) {
+      return false
+    } else {
+      return true
+    }
   }
 }
 
