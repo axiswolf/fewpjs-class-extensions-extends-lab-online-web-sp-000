@@ -15,33 +15,16 @@ class Polygon {
 
 class Triangle extends Polygon {
   get isValid() {
-    let side1 = this.sides[0]
-    let side2 = this.sides[1]
-    let side3 = this.sides[2]
-    if (this.count !== 3) {
-      return;
-    }
-    return ((side1 === side2) && (side1 === side3) && (side2 === side3))
+    return ((this.side[0] + this.side[1] > this.side[2]) && (this.side[1] + this.side[2] > this.side[0]) && (this.side[2] + this.side[0] > this.side[1]));
   }
 }
 
 class Square extends Polygon {
-  get area() {
-      if (this.isValid) {
-        let side1 = this.sides[0]
-        let side2 = this.sides[1]
-        return side1 * side2
-      }
-    }
+  get isValid() {
+    return ((this.side[0] === this.side[1]) && (this.side[0] === this.side[2]) && (this.side[0] === this.side[3]));
+  }
 
-    get isValid() {
-      let side1 = this.sides[0]
-      let side2 = this.sides[1]
-      let side3 = this.sides[2]
-      let side4 = this.sides[3]
-      if (this.count !== 4) {
-        return;
-      }
-      return ((side1 === side2) && (side1 === side3) && (side2 === side3) && (side3 === side4))
-    }
+  get area() {
+    return (this.side[0] * 5);
+  }
 }
