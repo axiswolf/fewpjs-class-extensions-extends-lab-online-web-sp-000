@@ -26,9 +26,22 @@ class Triangle extends Polygon {
 }
 
 class Square extends Polygon {
-  get isValid() {
-    // checks if there is 4 sides
-    // checks if each side is equal
+  get area() {
+      if (this.isValid) {
+        let side1 = this.sides[0]
+        let side2 = this.sides[1]
+        return side1 * side2
+      }
+    }
 
-  }
+    get isValid() {
+      let side1 = this.sides[0]
+      let side2 = this.sides[1]
+      let side3 = this.sides[2]
+      let side4 = this.sides[3]
+      if (this.count !== 4) {
+        return;
+      }
+      return ((side1 === side2) && (side1 === side3) && (side2 === side3) && (side3 === side4))
+    }
 }
