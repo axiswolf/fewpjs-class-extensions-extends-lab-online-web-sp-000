@@ -1,15 +1,15 @@
 // Your code here
 
 class Polygon {
-  constructor(sides){
-    this.sides = sides
+  constructor(side){
+    this.side = side
   }
   get countSides() {
-    return this.sides.length
+    return this.side.length
     // if sides = 3, return triangle
   }
   get perimeter() {
-    return this.sides.reduce((sum, currentSide) => sum + currentSide, 0)
+    return this.side.reduce((sum, currentSide) => sum + currentSide, 0)
   }
 }
 
